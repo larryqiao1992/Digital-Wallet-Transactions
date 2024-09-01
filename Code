@@ -1,0 +1,76 @@
+--1.Sort by Product Category
+	Select
+	Product_category,
+	Count(*) as count
+	From
+	Digital_wallet_transactions
+	Group by
+	Product_category
+	Order by
+	Count DESC
+
+--2.Sort by transaction status
+	Select
+	Transaction_status,
+	Count(*) as Count
+	From
+	Digital_wallet_transactions
+	Group by
+	Transaction_status
+	Order by
+	Count DESC
+
+--3.Sort by payment method
+	Select
+	Payment_method,
+	Count(*) as Count
+	From
+	Digital_wallet_transactions
+	Group by
+	Payment_method
+	Order by
+	Count DESC
+
+--4.Sort by Device Type
+	Select
+	Device_type,
+	Count(*) as Count
+	From
+	Digital_wallet_transactions
+	Group by
+	Device_type
+	Order by
+	Count DESC
+
+--5.Sort by Location
+	Select
+	Location,
+	Count(*) as Count
+	From
+	Digital_wallet_transactions
+	Group by
+	Location
+	Order by
+	Count DESC
+
+--6.Sort by Merchant Name
+	Select
+	Merchant_name,
+	Count(*) as Count
+	From
+	Digital_wallet_transactions
+	Group by
+	Merchant_name
+	Order by
+	Count DESC
+
+--7.Sort by payment method then by transaction status
+	Select
+	Payment_method,
+	Transaction_status,
+	Count(*) as Count
+	From
+	Digital_wallet_transactions
+	Group by
+	Payment_method,
+	Transaction_status
